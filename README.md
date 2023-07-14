@@ -2,7 +2,8 @@
 # Blog Laravel
 
 Projeto laravel Blog
-
+# Deploy
+- http://blog-laravel.cmfrj.com.br/login
 
 ## Rodar o projeto
 
