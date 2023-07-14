@@ -15,8 +15,8 @@ class CategoriaController extends Controller
      */
     public function index()
     {
-
-        $categorias = Categoria::paginate(6);
+        
+        $categorias = Categoria::latest()->paginate(6);
          $msg = session('mensagem.sucesso');
         return view('pages.categorias.index',['categorias' => $categorias, 'msg'=>$msg]);
     }

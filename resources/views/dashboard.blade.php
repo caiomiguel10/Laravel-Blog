@@ -1,6 +1,5 @@
 <x-app-layout>
-   
-   
+ 
     <div class="container my-5">
 
         <div class="row justify-content-center align-items-center">
@@ -9,15 +8,15 @@
                     <form class="d-flex" role="search" action="{{ route('dashboard.index') }}" method="GET">
                         <input class="form-control me-2 " type="search"
                             placeholder="Procure seus Posts" name="search">
-                        <a class="btn btn-success text-success" type="submit">Procurar</a>
+                        <button class="btn buton text-white" type="submit"><i class="bi bi-search fs-5"></i></button>
                     </form>
                 </div>
             </div>
             <div class="col-md-2 mt-2">
                 <div class="container-fluid">
                     <form class="d-flex" role="search">
-                        <a class="btn btn-success text-success" type="submit"
-                            href="{{ route('dashboard.show', Auth::user()->id) }}">Meus Posts</a>
+                        <a class="btn btn-success text-success text-white buton" type="submit"
+                            href="{{ route('dashboard.show', Auth::user()->id) }}">Meus Posts <i class="bi bi-emoji-smile"></i></a>
                     </form>
                 </div>
             </div>

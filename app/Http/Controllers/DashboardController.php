@@ -17,6 +17,7 @@ class DashboardController extends Controller
      */
     public function index(Request $request)
     {   
+       
         $pesquisa  = $request->search;
         $posts = Post::orderBy('titulo','desc')->where(function ($query) use ($pesquisa) {
             if($pesquisa){
@@ -24,7 +25,7 @@ class DashboardController extends Controller
             }
 
 
-        })->paginate(8);    
+        })->latest()->paginate(8);    
 
         // $posts = Post::all();
         return view('dashboard',['posts'=>$posts]);

@@ -5,7 +5,7 @@
     }
  </style>
     <div class="container text-center">
-        <h1 class="fs-5 p2-3">Criacao de Posts</h1>
+        <h1 class="fs-5 py-3">Criacao de Posts</h1>
     
     <form action="{{route('post.update',$post->id)}}" method="post">
         @method('PUT')
@@ -29,10 +29,10 @@
 
         </div>
         <div class="row">
-             <div class="col-12 d-flex justify-content-center ">
-                <div class="col-6 mb-3 ">
+             <div class="col-12 d-flex justify-content-center  ">
+                <div class="col-6 mb-3  p-2">
                     
-                    <input class="form-control border  rounded" type="file" id="formFile">
+                    <input class="form-control border border-primary shadow-lg p-2" type="file" id="imagem" name="imagem">
                   </div>
             </div>
             
@@ -55,7 +55,7 @@
         <div class="row">
             <div class="col 12 d-flex justify-content-center">
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-outline-primary" type="submit">Cadastrar</button>
+                    <button class="btn btn-outline-primary" type="submit">Atualizar</button>
                   </div>
             </div>
             

@@ -24,8 +24,8 @@ class PostController extends Controller
         $user = Auth::user();
         $msg = session('mensagem.sucesso');
 
-        $posts = $user->posts()->paginate(6);
-
+        $posts = $user->posts()->latest()->paginate(6);
+        
         return view('pages.posts.index',['posts'=>$posts,'msg'=>$msg]);
     }
 

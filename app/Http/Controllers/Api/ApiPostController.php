@@ -21,11 +21,12 @@ class ApiPostController extends Controller
     }
     public function index()
     {
-       return Post::with(relations: 'categorias')->get();
+       return Post::with(relations: 'categorias')->latest()->get();
     }
 
     public function store(PostRequest $request)
-    {
+    {   
+        Post::create($request->all());
         return response()->json(['message' => 'Post criado'],201);
     }
 
