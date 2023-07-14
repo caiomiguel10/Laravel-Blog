@@ -5,7 +5,7 @@
     }
  </style>
     <div class="container text-center">
-        <h1 class="fs-5 py-3">Criacao de Posts</h1>
+        <h1 class="fs-5 p2-3">Criacao de Posts</h1>
     
     <form action="{{route('post.update',$post->id)}}" method="post">
         @method('PUT')

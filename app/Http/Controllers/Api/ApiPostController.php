@@ -26,11 +26,11 @@ class ApiPostController extends Controller
 
     public function store(PostRequest $request)
     {
-        return response()->json($this->repository->add($request),201);
+        return response()->json(['message' => 'Post criado'],201);
     }
 
     public function show(string $id)
-    {
+    {   
         $PostModel = Post::with(relations: 'categorias')->find($id);
         
         if($PostModel === null){
@@ -49,7 +49,7 @@ class ApiPostController extends Controller
         return $post;
     }
 
-  
+   
     public function destroy(int $id)
     {   
         Post::destroy($id);

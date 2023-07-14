@@ -34,23 +34,23 @@ public function add(PostRequest $request):Post
         ]);
 
 
-        $users = User::all();
-        foreach ($users as $index => $user) {
+        // $users = User::all();
+        // foreach ($users as $index => $user) {
 
-            $email = new PostCreate(
+        //     $email = new PostCreate(
 
-                $request->titulo,
-                $request->conteudo,
-                $request->imagem,
-                $request->categoria_id,
-                $request->user_id,
-                $posts
-            );
+        //         $request->titulo,
+        //         $request->conteudo,
+        //         $request->imagem,
+        //         $request->categoria_id,
+        //         $request->user_id,
+        //         $posts
+        //     );
 
-            $when = now()->addSeconds($index * 5);
-            Mail::to($user)->later($when, $email);              
+        //     $when = now()->addSeconds($index * 5);
+        //     Mail::to($user)->later($when, $email);              
             
-        }
+        // }
         
 
         return $posts;
