@@ -5,9 +5,9 @@ Projeto laravel Blog
 # Deploy
 - http://blog-laravel.cmfrj.com.br/login
 
-## Rodar o projeto
+## Configuracoes de projeto
 
-Para rodar os seguintes comandos
+Rodar ose seguintes comandos na raiz
 
 ```bash
   npm install
@@ -29,10 +29,6 @@ Para rodar os seguintes comandos
 ```bash
  php artisan test
 ```
-
-
-
-## configurar envio de email
 
 
 # API
