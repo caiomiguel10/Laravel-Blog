@@ -7,7 +7,7 @@ Projeto laravel Blog
 
 ## Configuracoes de projeto
 
-Rodar ose seguintes comandos na raiz
+Rodar os seguintes comandos na raiz
 
 ```bash
   npm install
